@@ -1,28 +1,28 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
-        // Nivell 1 - Exercici 1
-        GenericMethods.printValues(1, 2, 3);
-        GenericMethods.printValues("Alex", "Pablo", "Jordi");
+        System.out.println("Nivell 1 - Exercici 2");
         GenericMethods.printValues(
                 new Person("Pia", "Muñoz", 35),
-                new Person("Pablo", "Lopez", 40),
-                new Person("Antonio", "Roca", 23));
+                1,
+                "Alex");
 
-        // Nivell 2 - Exercici 1
+        System.out.println("\nNivell 2 - Exercici 1");
         Person person = new Person("Pia", "Muñoz", 35);
-        GenericMethods.printValues2(1, 2, person);
-        GenericMethods.printValues2("Alex", "Pablo", person);
+        GenericMethods.printValues2(1, "Alex", person);
 
-        // Nivell 2 - Exercici 2
+        System.out.println("\nNivell 2 - Exercici 2");
         Integer[] integerArray = {4, 5, 6};
-        GenericMethods.printValues3(integerArray);
 
-        Person[] personArray = {
-                new Person("Pia", "Muñoz", 35),
-                new Person("Pablo", "Lopez", 40),
-                new Person("Antonio", "Roca", 23)
-        };
-        GenericMethods.printValues3(personArray);
+        List<String> list = new ArrayList<>();
+        list.add("Hello");
+        list.add("wolrd");
+        list.add("!");
+        GenericMethods.printValues3(list);
+
+        GenericMethods.printValues4(person, "Hi!", 2);
     }
 }
