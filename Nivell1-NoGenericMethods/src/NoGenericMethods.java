@@ -1,36 +1,36 @@
-public class NoGenericMethods<T> {
+public class NoGenericMethods {
 
-    T t1;
-    T t2;
-    T t3;
+    Integer t1;
+    Integer t2;
+    Integer t3;
 
-    public NoGenericMethods(T t1, T t2, T t3) {
+    public NoGenericMethods(Integer t1, Integer t2, Integer t3) {
         this.t1 = t1;
         this.t2 = t2;
         this.t3 = t3;
     }
 
-    public T getT1() {
+    public Integer getT1() {
         return this.t1;
     }
 
-    public void setT1(T t1) {
+    public void setT1(Integer t1) {
         this.t1 = t1;
     }
 
-    public T getT2() {
+    public Integer getT2() {
         return this.t2;
     }
 
-    public void setT2(T t2) {
+    public void setT2(Integer t2) {
         this.t2 = t2;
     }
 
-    public T getT3() {
+    public Integer getT3() {
         return this.t3;
     }
 
-    public void setT3(T t3) {
+    public void setT3(Integer t3) {
         this.t3 = t3;
     }
 

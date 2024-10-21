@@ -1,3 +1,3 @@
-public interface Telephone {
-    public void call();
+interface Telephone {
+    void call();
 }
